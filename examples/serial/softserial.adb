@@ -1,0 +1,12 @@
+M:softserial
+F:G$soft_sio0_init$0$0({2}DF,SV:S),Z,0,0,0,0,0
+F:G$soft_putchar$0$0({2}DF,SV:S),Z,0,0,0,0,0
+F:G$soft_getchar$0$0({2}DF,SC:S),Z,0,0,0,0,0
+S:Lsoftserial.soft_sio0_init$baud_rate$1$9({2}SI:U),R,0,0,[]
+S:Lsoftserial.soft_putchar$c$1$11({1}SC:S),R,0,0,[r7]
+S:G$usartInit$0$0({2}DF,SV:S),C,0,0
+S:G$usartSendByte$0$0({2}DF,SV:S),C,0,0
+S:G$usartSendByteHex$0$0({2}DF,SV:S),C,0,0
+S:G$usartSendWordHex$0$0({2}DF,SV:S),C,0,0
+S:G$usartSendLongHex$0$0({2}DF,SV:S),C,0,0
+S:G$usartSendString$0$0({2}DF,SV:S),C,0,0
