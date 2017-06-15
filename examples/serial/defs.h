@@ -61,6 +61,10 @@ __sfr __at 0x9f AUTODAT2;
 // Defines to allow use of camelCase.
 #define mainInit(x) main_init(x)
 #define mainLoop(x) main_loop(x)
-#define handleVendorCommand handle_vendorcommand
+#define handleVendorCommand(x) handle_vendorcommand(x)
+#define handleGetInterface(x, y) handle_get_interface(x, y)
+#define handleSetInterface(x, y) handle_set_interface(x, y)
+#define handleGetConfiguration() handle_get_configuration()
+#define handleSetConfiguration(x) handle_set_configuration(x)
 
 #endif

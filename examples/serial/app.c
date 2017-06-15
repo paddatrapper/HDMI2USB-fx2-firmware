@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2009-2012 Chris McClelland
+ * Copyright (C) 2017 Kyle Robbertze <krobbertze@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -31,7 +32,6 @@ void TD_Init(void);
 void TD_Poll(void);
 
 // Called once at startup
-//
 extern void uart_init();
 void mainInit(void) {
 #ifdef BOARD_opsis
@@ -86,6 +86,28 @@ void mainInit(void) {
 // Called repeatedly while the device is idle
 void mainLoop(void) {
     TD_Poll();
+    {
+        // Constantly print out dev strings
+        const uint8 *s = dev_strings;
+        uint8 len;
+        s = s + *s;
+        len = (*s)/2 - 1;
+        s += 2;
+        while ( len ) {
+            usartSendByte(*s);
+            s += 2;
+            len--;
+        }
+        usartSendByte(' ');
+        len = (*s)/2 - 1;
+        s += 2;
+        while ( len ) {
+            usartSendByte(*s);
+            s += 2;
+            len--;
+        }
+        usartSendByte('\r');
+    }
 }
 
 // Called when a vendor command is received
@@ -95,7 +117,29 @@ uint8 handleVendorCommand(uint8 cmd) {
     return false;  // unrecognised command
 }
 
-void TD_Init(void)             // Called once at startup
+// Sets *alt_ifc to the current alternative interface for ifc
+uint8 handleGetInterface(uint8 ifc, uint8* alt_ifc) {
+    *alt_ifc = 0;
+    return true;
+}
+
+// Sets the current interface
+uint8 handleSetInterface(uint8 ifc, uint8 alt_ifc) {
+    return true;
+}
+
+// Return the current configuration
+uint8 handleGetConfiguration() {
+    return 1; // Only one configuration
+}
+
+// Set the current configuration
+uint8 handleSetConfiguration(uint8 cfg) {
+    return false; // Does not support changing the configuration
+}
+
+// Called once at startup
+void TD_Init(void)
 {
     // Return FIFO setings back to default just in case previous firmware messed
     // with them.
@@ -231,10 +275,10 @@ void TD_Init(void)             // Called once at startup
     //RESETFIFOS();
 }
 
-void TD_Poll(void)             // Called repeatedly while the device is idle
+void TD_Poll(void)                // Called repeatedly while the device is idle
 {
     // CDC Polling?
-    if (!(EP1INCS & 0x02))      // check if EP1IN is available
+    if (!(EP1INCS & 0x02))        // check if EP1IN is available
     {
         EP1INBUF[0] = 0x0A;       // if it is available, then fill the first 10
         EP1INBUF[1] = 0x20;       // bytes of the buffer with appropriate data. 
@@ -246,6 +290,6 @@ void TD_Poll(void)             // Called repeatedly while the device is idle
         EP1INBUF[7] = 0x02;
         EP1INBUF[8] = 0x00;
         EP1INBUF[9] = 0x00;
-        EP1INBC = 10;            // manually commit once the buffer is filled
+        EP1INBC = 10;              // manually commit once the buffer is filled
     }
 }

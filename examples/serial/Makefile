@@ -53,9 +53,11 @@ CC := sdcc
 CFLAGS += -DDATE=0x$(FIRMWARE_VERSION) -mmcs51 --std-c99 -DSDCC -Wa"-p" $(FLAGS)
 
 ifeq ($(USE_16K),1)
-	CFLAGS += --code-size 0x3e00 --xram-size 0x0200 -Wl"-b DSCR_AREA=0x2e00" -Wl"-b INT2JT=0x3d00" --debug
+	CFLAGS += --code-size 0x3e00 --xram-size 0x0200 -DDSCR_AREA=0x2e00 
+	CFLAGS += -Wl"-b DSCR_AREA=0x2e00" -Wl"-b INT2JT=0x3d00" --debug
 else
-	CFLAGS += --code-size 0x1e00 --xram-size 0x0200 -Wl"-b DSCR_AREA=0x1e00" -Wl"-b INT2JT=0x1f00"
+	CFLAGS += --code-size 0x1e00 --xram-size 0x0200 -DDSCR_AREA=0x2e00
+	CFLAGS += -Wl"-b DSCR_AREA=0x1e00" -Wl"-b INT2JT=0x1f00"
 endif
 
 ifeq (${BOARD},atlys)
@@ -102,11 +104,11 @@ $(FX2LIBDIR)/.git: ../../.gitmodules
 	git submodule update --recursive --init $$(dirname $@)
 	touch $@ -r ../../.gitmodules
 
-$(TARGET).hex: date.h descriptors_strings.h $(CC_OBJS)
+$(TARGET).hex: $(CC_OBJS)
 	$(Q_LINK)$(CC) $(CFLAGS) -o $@ $+ $(LIBS)
 
-%.rel: %.c
-	$(Q_CC)$(CC) $(CFLAGS) -c --disable-warning 85 $(INCS) $?
+%.rel: %.c descriptors.h
+	$(Q_CC)$(CC) $(CFLAGS) -c --disable-warning 85 $(INCS) $<
 
 progOffsets.h: prog.rel
 	$(Q_GEN)cat prog.lst | ./lstParse.py > progOffsets.h
@@ -147,8 +149,8 @@ check_int2jt: $(TARGET).hex
 check: check_int2jt
 
 clean:
-	$(Q_RM)$(RM) *.iic *.asm *.lnk *.lst *.map *.mem *.rel *.rst *.sym \
-		*.lk descriptors_strings.* progOffsets.h lights.hex
+	$(Q_RM)$(RM) *.adb *.asm *.cdb *.lk *.lst *.omf *.map *.mem *.rel *.rst \
+		*.sym descriptors_string.* serial.hex
 	cd $(FX2LIBDIR) && make clean
 
 distclean: clean
