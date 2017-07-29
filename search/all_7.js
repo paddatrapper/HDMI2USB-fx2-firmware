@@ -8,6 +8,5 @@ var searchData=
   ['handleuvccommand',['handleUVCCommand',['../uvc_8c.html#a04cd8d4138a358434c27a859ec2fd414',1,'handleUVCCommand(BYTE cmd):&#160;uvc.c'],['../uvc_8h.html#a04cd8d4138a358434c27a859ec2fd414',1,'handleUVCCommand(BYTE cmd):&#160;uvc.c']]],
   ['handlevendorcommand',['handleVendorCommand',['../defs_8h.html#a4f268803f09c4ba30da5e6794164069c',1,'handleVendorCommand():&#160;defs.h'],['../app_8c.html#ab5805e7ce090a30d9923fb8f8a966882',1,'handleVendorCommand(uint8 cmd):&#160;app.c']]],
   ['hex',['hex',['../read-serialno_8c.html#a1ea37b902622823bff06bc56db650154',1,'read-serialno.c']]],
-  ['hispeed_5fisr',['hispeed_isr',['../firmware_8c.html#a09b1ced1361edab5743d8ed7971dca51',1,'firmware.c']]],
-  ['hdmi2usb_2dfx2_2dfirmware',['HDMI2USB-fx2-firmware',['../index.html',1,'']]]
+  ['hispeed_5fisr',['hispeed_isr',['../firmware_8c.html#a09b1ced1361edab5743d8ed7971dca51',1,'firmware.c']]]
 ];
