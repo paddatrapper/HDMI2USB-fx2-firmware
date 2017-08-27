@@ -21,7 +21,10 @@ var searchData=
   ['check_5finternal4',['CHECK_INTERNAL4',['../makestuff_8h.html#a66f54c7574b8039a3a35e789a6030395',1,'makestuff.h']]],
   ['check_5finternal5',['CHECK_INTERNAL5',['../makestuff_8h.html#a006ecdc483ef3141d6ef2132a5ca162e',1,'makestuff.h']]],
   ['check_5fstatus',['CHECK_STATUS',['../makestuff_8h.html#af429f5833f6cbe7dfed8ec227f321e67',1,'makestuff.h']]],
+  ['classspec',['classspec',['../structuac__control__section.html#a14d00c224cda0b7bef41ca403ad657f3',1,'uac_control_section']]],
   ['concat',['CONCAT',['../makestuff_8h.html#a2f18db18bca26cafa95e9719de4a41ef',1,'makestuff.h']]],
   ['concat_5finternal',['CONCAT_INTERNAL',['../makestuff_8h.html#a619f85f514638df1f9437d1c04669329',1,'makestuff.h']]],
-  ['configuration',['Configuration',['../uvc_8c.html#a35ca7139af023b8f589fe1846672a1b9',1,'uvc.c']]]
+  ['config',['config',['../structusb__hispeed__section.html#a4eb547be410ac0aaf5f96ba71a9c5c56',1,'usb_hispeed_section::config()'],['../structusb__fullspeed__section.html#aa24c91f98f1dc965a17f80b0810f1f69',1,'usb_fullspeed_section::config()']]],
+  ['configuration',['Configuration',['../uvc_8c.html#a35ca7139af023b8f589fe1846672a1b9',1,'uvc.c']]],
+  ['control',['control',['../structusb__hispeed__section.html#a06850d741488fcc8da5f50e6a625b411',1,'usb_hispeed_section::control()'],['../structusb__fullspeed__section.html#ae0cbc7d2f2837a34637a03812d809a1f',1,'usb_fullspeed_section::control()']]]
 ];

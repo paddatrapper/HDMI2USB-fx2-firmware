@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['soft_5fgetchar',['soft_getchar',['../softserial_8c.html#a52d2ac04a30b7b66ee12c1e49c1f93ea',1,'soft_getchar(void):&#160;softserial.c'],['../softserial_8h.html#a1277249076588f9ba4548105348f7a7f',1,'soft_getchar():&#160;softserial.c']]],
-  ['soft_5fputchar',['soft_putchar',['../softserial_8c.html#a5c62ebb5b22bc0ab73219405eb0a7635',1,'soft_putchar(char c):&#160;softserial.c'],['../softserial_8h.html#a5c62ebb5b22bc0ab73219405eb0a7635',1,'soft_putchar(char c):&#160;softserial.c']]],
-  ['soft_5fsio0_5finit',['soft_sio0_init',['../softserial_8c.html#a214f348bd5ababb2d41167cd1d97a9f9',1,'soft_sio0_init(WORD baud_rate):&#160;softserial.c'],['../softserial_8h.html#a199b30c6e3edda951abffd7fe03ecc3b',1,'soft_sio0_init(WORD baud_rate) __critical:&#160;softserial.c']]],
-  ['sudav_5fisr',['sudav_isr',['../firmware_8c.html#a4441b5e3ae13238446f4e304332bb911',1,'firmware.c']]],
-  ['suspend_5fisr',['suspend_isr',['../firmware_8c.html#ae619b340ae0f9b5f9900f9fc30b1b1cc',1,'firmware.c']]]
+  ['main',['main',['../hdmi2usb_2firmware_8c.html#acdef7a1fd863a6d3770c1268cb06add3',1,'main():&#160;firmware.c'],['../audio_2firmware_8c.html#acdef7a1fd863a6d3770c1268cb06add3',1,'main():&#160;firmware.c'],['../lights_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667',1,'main(void):&#160;lights.c'],['../serial_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667',1,'main(void):&#160;serial.c']]],
+  ['main_5finit',['main_init',['../hdmi2usb_2firmware_8c.html#a0b8da71bf10f209b0dfa41f04551c4fc',1,'firmware.c']]],
+  ['main_5floop',['main_loop',['../hdmi2usb_2firmware_8c.html#aa2deaf0f63ca4a73a37b86d05678fb46',1,'firmware.c']]],
+  ['maininit',['mainInit',['../app_8c.html#af2dbca6beb5b13d3d7fc7c94176c12ec',1,'app.c']]],
+  ['mainloop',['mainLoop',['../app_8c.html#a52387bf053883d1a8feeee2dd2cdd4f3',1,'app.c']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['usart_5finit',['usart_init',['../audio_2firmware_8c.html#a86dc05ad84d1c4cf5681155bc62182ba',1,'firmware.c']]],
   ['usb_5fcdc_5f1_5f5_5fstop_5fbits',['USB_CDC_1_5_STOP_BITS',['../cdc_8h.html#a5659cce8b18580760dc0070eae409f6a',1,'cdc.h']]],
   ['usb_5fcdc_5f1_5fstop_5fbits',['USB_CDC_1_STOP_BITS',['../cdc_8h.html#aa94da1bea23140a3bba39577b50bbda7',1,'cdc.h']]],
   ['usb_5fcdc_5f2_5fstop_5fbits',['USB_CDC_2_STOP_BITS',['../cdc_8h.html#af6e79c736d7528bf281024fe3b655914',1,'cdc.h']]],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['baud',['BAUD',['../serial_8c.html#a62634036639f88eece6fbf226b45f84b',1,'serial.c']]],
+  ['baud',['BAUD',['../audio_2debug_8c.html#a62634036639f88eece6fbf226b45f84b',1,'BAUD():&#160;debug.c'],['../serial_8c.html#a62634036639f88eece6fbf226b45f84b',1,'BAUD():&#160;serial.c']]],
   ['bmaptr1inc',['bmAPTR1INC',['../defs_8h.html#ab5e05dec0087ebf5e45dc177b7911954',1,'defs.h']]],
   ['bmaptr2inc',['bmAPTR2INC',['../defs_8h.html#ae110e37bbcd8d357969a967b470aa307',1,'defs.h']]],
   ['bmaptren',['bmAPTREN',['../defs_8h.html#ab66669ed01c24743913ad2ca535935e0',1,'defs.h']]],

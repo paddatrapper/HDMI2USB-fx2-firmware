@@ -1,12 +1,7 @@
 var searchData=
 [
-  ['handle_5fget_5fconfiguration',['handle_get_configuration',['../uvc_8c.html#af4ee315a84b3554439291ec70cc853b6',1,'uvc.c']]],
-  ['handle_5fget_5fdescriptor',['handle_get_descriptor',['../uvc_8c.html#aee2c2b4cd7c57ed46366d15060201632',1,'uvc.c']]],
-  ['handle_5fget_5finterface',['handle_get_interface',['../uvc_8c.html#ac89f9ff94ce70cd12cef89284f850882',1,'uvc.c']]],
-  ['handle_5fset_5fconfiguration',['handle_set_configuration',['../uvc_8c.html#a076fe6586c7500c3ea4d7259c4186367',1,'uvc.c']]],
-  ['handle_5fset_5finterface',['handle_set_interface',['../uvc_8c.html#a1ca7d2a749ca888c20a2fe242b8bcf1b',1,'uvc.c']]],
-  ['handleuvccommand',['handleUVCCommand',['../uvc_8c.html#a04cd8d4138a358434c27a859ec2fd414',1,'handleUVCCommand(BYTE cmd):&#160;uvc.c'],['../uvc_8h.html#a04cd8d4138a358434c27a859ec2fd414',1,'handleUVCCommand(BYTE cmd):&#160;uvc.c']]],
-  ['handlevendorcommand',['handleVendorCommand',['../app_8c.html#ab5805e7ce090a30d9923fb8f8a966882',1,'app.c']]],
-  ['hex',['hex',['../read-serialno_8c.html#a1ea37b902622823bff06bc56db650154',1,'read-serialno.c']]],
-  ['hispeed_5fisr',['hispeed_isr',['../firmware_8c.html#a09b1ced1361edab5743d8ed7971dca51',1,'firmware.c']]]
+  ['cdc_5fhandle_5fcommand',['cdc_handle_command',['../cdc_8c.html#a5ba7743b5dd44cc097cec7382281666d',1,'cdc_handle_command(BYTE cmd):&#160;cdc.c'],['../cdc_8h.html#a5ba7743b5dd44cc097cec7382281666d',1,'cdc_handle_command(BYTE cmd):&#160;cdc.c']]],
+  ['cdc_5freceive_5fpoll',['cdc_receive_poll',['../cdc_8c.html#afd5cc56e27e268e1826814b1bb0684aa',1,'cdc_receive_poll():&#160;cdc.c'],['../cdc_8h.html#afd5cc56e27e268e1826814b1bb0684aa',1,'cdc_receive_poll():&#160;cdc.c']]],
+  ['cdcuser_5freceive_5fdata',['cdcuser_receive_data',['../cdc_8h.html#a4664c9518d02d058f08f91bfbcbf380f',1,'cdcuser_receive_data(BYTE *data, WORD length):&#160;to-uart.c'],['../to-uart_8c.html#a4664c9518d02d058f08f91bfbcbf380f',1,'cdcuser_receive_data(BYTE *data, WORD length):&#160;to-uart.c']]],
+  ['cdcuser_5fset_5fline_5frate',['cdcuser_set_line_rate',['../cdc_8h.html#a234ce5fd29621c78b98028717641623d',1,'cdcuser_set_line_rate(DWORD baud_rate):&#160;to-uart.c'],['../to-uart_8c.html#a234ce5fd29621c78b98028717641623d',1,'cdcuser_set_line_rate(DWORD baud_rate):&#160;to-uart.c']]]
 ];
