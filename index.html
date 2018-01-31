@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HDMI2USB
-   &#160;<span id="projectnumber">8359b97</span>
+   &#160;<span id="projectnumber">8ae0764</span>
    </div>
    <div id="projectbrief">Record and stream HD videos for conferences and meetings</div>
   </td>
@@ -125,8 +125,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><a href="https://reference.digilentinc.com/atlys:atlys:atlys">Further Documentation</a></li>
 </ul>
 <h1>Building</h1>
-<pre class="fragment">make -f Makefile.fx2 load-fx2
-</pre><p>will build and flash the FX2 firmware. This requires the <code>hdmi2usb-mode-switch</code> command, which on Debian Sid and Stretch can be installed using the <code>hdmi2usb-mode-switch</code> package, otherwise see <a href="https://github.com/timvideos/HDMI2USB-mode-switch">HDMI2USB-mode-switch</a>.</p>
+<pre class="fragment">make load-fx2
+</pre><p>will build and flash the FX2 firmware. This requires the <code>hdmi2usb-mode-switch</code> command, which on Debian Stretch and later can be installed using the <code>hdmi2usb-mode-switch</code> package, otherwise see <a href="https://github.com/timvideos/HDMI2USB-mode-switch">HDMI2USB-mode-switch</a>. It also requires <a href="http://sdcc.sourceforge.net/">SDCC</a>.</p>
 <p>There are three ways to run <code>hdmi2usb-mode-switch</code>:</p>
 <ol type="1">
 <li>As root</li>
