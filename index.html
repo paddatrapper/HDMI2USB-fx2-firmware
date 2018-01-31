@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HDMI2USB
-   &#160;<span id="projectnumber">8ae0764</span>
+   &#160;<span id="projectnumber">7ed78dc</span>
    </div>
    <div id="projectbrief">Record and stream HD videos for conferences and meetings</div>
   </td>
@@ -127,7 +127,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>Building</h1>
 <pre class="fragment">make load-fx2
 </pre><p>will build and flash the FX2 firmware. This requires the <code>hdmi2usb-mode-switch</code> command, which on Debian Stretch and later can be installed using the <code>hdmi2usb-mode-switch</code> package, otherwise see <a href="https://github.com/timvideos/HDMI2USB-mode-switch">HDMI2USB-mode-switch</a>. It also requires <a href="http://sdcc.sourceforge.net/">SDCC</a>.</p>
-<p>There are three ways to run <code>hdmi2usb-mode-switch</code>:</p>
+<p>By default the firmware will be built for the Opsis board. This can be changed by passing <code>BOARD=atlys</code> to make to build for the Atlys boards. The audio firmware also supports <code>BOARD=fx2miniboard</code> for building for the Cypress EZ-USB FX2LP.</p>
+<p>To build the docs, doxygen is required. Then run </p>
+<pre class="fragment">make docs
+</pre><p>There are three ways to run <code>hdmi2usb-mode-switch</code>:</p>
 <ol type="1">
 <li>As root</li>
 </ol>
